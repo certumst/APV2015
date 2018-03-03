@@ -18,12 +18,12 @@
         <!-- Chargement des données des images et vidéos -->
         <!-- <script src="../../data/display.js" type="text/javascript"></script> -->
         <!-- <script src="../../data/videos.js" type="text/javascript"></script> -->
-        <script src="json_timeline.js" type="text/javascript"></script>
+        <script src="../../Donnees/json_timeline.js" type="text/javascript"></script>
         <!-- <script src="navigation_page_json.js" type="text/javascript"></script>  -->
-        <script src="../../Donnees/bdd_site_jtx.js" type="text/javascript"></script> 
+        <!-- <script src="../../Donnees/bdd_site_jtx.js" type="text/javascript"></script>  -->
         <script src="../../Donnees/projs_json_true.js" type="text/javascript"></script> 
         <script src="../../Donnees/videos_json_true.js" type="text/javascript"></script> 
-        <link href="../page_menu/main2015.css" rel="stylesheet" type="text/css">
+        <link href="../css/main2015.css" rel="stylesheet" type="text/css">
         
     </head>
 
@@ -120,6 +120,10 @@
         timeline_options={
            
         }
+        var timeline_json = {
+	        "events": events_t
+        }
+    
         window.timeline = new TL.Timeline('timeline-embed', timeline_json, timeline_options);
 
          timeline.on("change",change_proj);
@@ -272,4 +276,4 @@
     }
     </script>   
 
-<script src="../shared_ressources/recherche_js.js" type="text/javascript"></script>
+<script src="../js/recherche_js.js" type="text/javascript"></script>

@@ -1,0 +1,184 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Traitement des données</title>
+
+    <link href="../Pages/css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="../Pages/js/jquery/jquery.js" type="text/javascript"></script>
+    <script src="../Pages/js/list.js" type="text/javascript"></script>
+    <script src="../Pages/js/bootstrap/bootstrap.js" type="text/javascript"></script>
+
+    <script src="bdd_site_jtx.js" type="text/javascript"></script>
+    <script src="bdd_site_traitement.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Projs à ajouter : </h1>
+        <p>En dessous, l'input doit contenir les ids des projs que l'on veut extraire de la bdd du JTX sous forme d'une liste intégrée dans le JSON :  '{"value":[ ... ]}'. La génération prend une dizaine de secondes. </p>
+        <div class="form-group">
+                <textarea class="form-control" id="projs_ids" rows="5">
+                    {"value":[
+                        317, 404, 405, 407, 409, 437, 
+                        111, 186, 187, 188, 204, 260, 261, 262, 263, 280, 318, 322, 334, 335, 399, 428, 435, 
+                        203, 255, 256, 257, 258, 259, 264, 281, 314, 323, 336, 337, 338, 410, 434,
+                        248, 252, 253, 254
+                    ]}
+                </textarea>
+        </div>
+        <hr>
+        <p>Si des dates sont à modifier remplir le JSON suivant sous la forme [{"id":404, "date":"AAAA-MM-JJ"}]. Si une vraie date n'est pas donnée pour une proj, celle de la BDD du site du JTX est conservée.</p>
+        <div class="form-group">
+                <textarea class="form-control" id="projs_dates" rows="5">
+                        [
+                        {"id":186, "date":"2016-11-13"},
+                        {"id":187, "date":"2016-11-17"},
+                        {"id":188, "date":"2016-11-22"},
+                        {"id":204, "date":"2017-04-05"},
+                        {"id":260, "date":"2017-09-02"},
+                        {"id":261, "date":"2017-09-04"},
+                        {"id":262, "date":"2017-09-30"},
+                        {"id":263, "date":"2017-05-08"}, 
+                        {"id":281, "date":"2016-04-10"}, 
+                        {"id":280, "date":"2017-04-10"}, 
+                        {"id":318, "date":"2016-10-14"}, 
+                        {"id":322, "date":"2017-03-04"},
+                        {"id":334, "date":"2017-05-02"}, 
+                        {"id":335, "date":"2017-02-23"}, 
+                        {"id":317, "date":"2017-10-19"}, 
+                        {"id":203, "date":"2016-04-14"}, 
+                        {"id":255, "date":"2016-09-01"},
+                        {"id":256, "date":"2016-09-03"},
+                        {"id":257, "date":"2016-09-05"},
+                        {"id":259, "date":"2016-09-07"},
+                        {"id":258, "date":"2016-09-28"},
+                        {"id":264, "date":"2016-05-16"},
+                        {"id":314, "date":"2016-05-30"},
+                        {"id":323, "date":"2016-03-12"},
+                        {"id":337, "date":"2016-06-08"},
+                        {"id":336, "date":"2016-11-09"},
+                        {"id":338, "date":"2016-02-15"},
+                        {"id":410, "date":"2017-03-24"},
+                        {"id":434, "date":"2016-04-15"},
+                        {"id":248, "date":"2015-09-20"},
+                        {"id":252, "date":"2015-09-02"},
+                        {"id":253, "date":"2015-09-04"},
+                        {"id":254, "date":"2015-09-27"}
+                        ]
+                        
+                </textarea>
+        </div>
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-success" onclick="generer_projs()">Générer!</button>
+        </div>
+
+        <hr>
+
+        <h2>Création de la base de données des projs</h2>
+        <p>À copier dans le fichier projs_json.js</p>
+        <div class="form-group">
+            <textarea class="form-control" id="text_projs" rows="10"></textarea>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-primary" onclick="copy('projs')">Copier</button>        
+        </div>
+        <hr>
+
+        
+        <h2>Création de la base de données des videos</h2>
+        <p>À copier dans le fichier videos_json.js</p>
+        <div class="form-group">
+            <textarea class="form-control" id="text_videos" rows="10"></textarea>
+        </div>
+        <div class="d-flex justify-content-end">
+                <button class="btn btn-primary" onclick="copy('videos')">Copier</button>        
+        </div>
+
+        <hr>
+
+        <h2>Création du JSON pour la timeline</h2>
+        <p>À copier dans le fichier json_timeline.js</p>
+        <div class="form-group">
+            <textarea class="form-control" id="text_timeline" rows="10"></textarea>
+        </div>
+        <div class="d-flex justify-content-end">
+                <button class="btn btn-primary" onclick="copy('timeline')">Copier</button>        
+        </div>
+
+        <hr>
+        <hr>
+
+        <h3>Utilité : une fois la génération faite, faites ici des recherches par id sur les projs</h3>
+        
+        <div id="search_proj">
+                <!-- class="search" automagically makes an input a search field. -->
+                <div class="form-group"><input type="text" class="form-control search" onkeyup="search"></div>
+                    <ul class="list">
+                        <li>
+                        <h4 class="titre"></h4>
+                        <p class="date"></p>
+                        <small class="id badge badge-primary"></small>
+                        </li>
+                    </ul>
+        </div>
+        
+
+      
+    </div>
+</body>
+
+<script>
+    function generer_projs(){
+        projs_ids = JSON.parse(document.getElementById('projs_ids').value.trim())
+        projs_dates = JSON.parse(document.getElementById('projs_dates').value.trim())
+        console.log(projs_ids)
+        create_db(projs_ids.value, projs_dates)
+        document.getElementById('text_projs').value = "var G_projs_json = " + JSON.stringify(projs, null, 3)
+        document.getElementById('text_videos').value = "var G_videos_json = " + JSON.stringify(videos, null, 3)
+        document.getElementById('text_timeline').value = "var events_t = "+ JSON.stringify(get_json_for_timeline(), null, 3)
+
+        var options = {
+            valueNames:[
+                'titre',
+                'id',
+                'date',
+            ],
+            page: 10,
+            pagination: true
+        };
+        var search_proj = new List('search_proj', options, projs);
+        
+    }
+
+    function copy(typee) {
+        var copyText = document.getElementById("text_"+typee);
+        copyText.select();
+        document.execCommand("Copy");
+    }
+
+
+
+    // var liste_e = []
+    // function get_frankiz_events(){
+        
+    //     for(year=2015;year<2018;year++){
+    //         for(k=1;k<13;k++){
+    //             $.get(
+    //                 "https://www.frankiz.net/activity/ajax/timetable/activity/", 
+    //                 {"showdate":k.toString()+"/1/"+year, "viewtype":"month", "timezone":1}, 
+    //                 function(data){
+    //                     liste_e.concat(data.events)
+    //                 }
+    //             )
+    //         }
+    //     }
+        
+       
+    // }
+
+    
+
+</script>
+
+</html>

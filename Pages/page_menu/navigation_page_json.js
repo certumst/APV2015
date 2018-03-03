@@ -6,14 +6,6 @@ var G_evenements_ids = {
     'WEI':16,
 }
 
-function create_json_evnt(){
-    for(k in G_evenements_ids){
-        sous = G_projs_json.filter(proj => proj.category == G_evenements_ids[k])
-        console.log(k)
-        console.log(sous)
-    }
-}
-
 var G_liste_evenements = [
     {
         titre: 'WEI',
