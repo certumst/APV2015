@@ -1,0 +1,86 @@
+@keyframes change_color {
+    from {background-color: white;}
+    25% {background-color: #005079;}
+    60% {background-color: white;}
+    to {background-color: white;}
+}
+
+@keyframes change_opacity_to_null {
+    from {opacity: 0;
+        }
+    50% {opacity: .3}
+    75% {opacity: .3}
+    to {opacity: 0;
+        }
+}
+
+@keyframes change_opacity_to_1 {
+    from {opacity: 0;
+        }
+    to {opacity: 1;
+        }
+}
+
+/* #ee2e22; #003e5e;*/
+body {
+    animation: change_color 8s 1s both;
+}   
+
+
+#background_image_1{
+    position: absolute;
+    height: 500px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+
+    top: 0; 
+    bottom: 0; 
+    margin-top: auto; 
+    margin-bottom   : auto; 
+    animation-name: change_opacity_to_null ;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+#background_image_2{
+    position: absolute;
+    height: 500px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+
+    top: 0; 
+    bottom: 0; 
+    margin-top: auto; 
+    margin-bottom   : auto; 
+
+    animation-name: change_opacity_to_1 ;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+}
+
+#entrer_button{
+    position: absolute;
+    width: 70px;
+    height: 50px;
+
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+
+    top: 350px; 
+    bottom: 0; 
+    margin-top: auto; 
+    margin-bottom: auto; 
+
+    animation-name: change_opacity_to_1 ;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 8s;
+}

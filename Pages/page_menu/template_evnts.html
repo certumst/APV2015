@@ -1,0 +1,32 @@
+<div class="col-3">
+    <div class="card ">
+        <!-- The innerHTML of children with class="name" becomes this items "name" value -->
+        <img class="card-img-top" src="<%= evnt_image %>" alt="Card image cap">
+        <div class="card-body p-2">
+            <h5 class="titre card_list card-title m-0" data-toggle="collapse" data-target="<%= "#" + collapse_id %>" aria-expanded="false" role="button"><%= titre %></h5>
+            <div id="<%= collapse_id %>" class="collapse collapse_id">
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <% for(k=0;k<content.length;k++){ %>
+                        <li class="nav-item">
+                                <a class="nav-link <% if(k==0){print("active")} %>"  data-toggle="tab" href="<%= "#" + collapse_id + content[k].annee %>" role="tab" aria-controls="home" aria-selected="true"> <%= content[k].annee %> </a>
+                        </li>
+                    <% } %>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <% for(k=0;k<content.length;k++){ %>
+                        <div class="tab-pane fade   <% if(k==0){print("show active")} %>" id="<%= collapse_id + content[k].annee %>" role="tabpanel" >
+                            <div class="list-group  list-group-flush">
+                                <% for(l=0;l<content[k].projs.length;l++){ %>
+                                    <a href="../page_contenu/contenu.html#proj=<%= content[k].projs[l].proj_id %>" class="list-group-item list-group-item-action"> <%= content[k].projs[l].titre %></a>
+                                <% } %>
+                            </div>
+                        </div>
+                    <% } %>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
