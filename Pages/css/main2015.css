@@ -155,3 +155,7 @@ body{
       top:300px;  
       /* margin-left: 250px; */
   }
+
+  .card_proj{
+      background-color: red;
+  }

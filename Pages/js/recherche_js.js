@@ -1,5 +1,5 @@
 $('#recherche_input').on('focus', function(){
-    $('#recherche_results').collapse('show')
+    // $('#recherche_results').collapse('show')
 });
 
 $( "body" ).mouseup(function( e ) {
@@ -14,6 +14,12 @@ $( "body" ).mouseup(function( e ) {
 
 $('#recherche_input').on('keyup', function(){
    userList.search(document.getElementById('recherche_input').value)
+   if(document.getElementById('recherche_input').value==""){
+        $("#recherche_results").collapse('hide');
+    }
+    else{
+        $("#recherche_results").collapse('show');
+    }
 });
 
 //underscore.js
@@ -27,7 +33,8 @@ var options = {
         'tags',
         'acteurs',
         'id',
-        'proj'
+        'proj',
+        'type',
     ],
     page: 10,
     pagination: true
@@ -35,6 +42,7 @@ var options = {
 
 
 var userList = new List('users', options, G_videos_json);
+add_class_to_proj()
 userList.on('searchStart', prepare_search);
 // userList.on('searchComplete',add_class);
 userList.on('searchComplete', explain_search);
@@ -51,6 +59,7 @@ function modify_projs(currval, index){
 }
 
 function add_class(){
+    console.log('adding_class')
     children = document.getElementById('pag').children;
     for(i=0;i<children.length;i++){
         children[i].classList.add('page-item')
@@ -59,6 +68,8 @@ function add_class(){
 }
 
 function explain_search(){
+    add_class_to_proj();
+    userList.sort('type', { order: "asc" });
     prop_search = ['titre','auteurs','date','tags','acteurs',]
     console.log('explain')
     //Affiche des informations sous les vidéos pour expliquer pourquoi elles sortent dans la recherche
@@ -92,7 +103,9 @@ function add_footer(div_elmt, prop, val){
     sm.classList.add("text-capitalize")
     
     new_div.appendChild(sm)
-    div_elmt.appendChild(new_div)
+    if(div_elmt){
+        div_elmt.appendChild(new_div)
+    }
 }
 
 function delete_all_footers(div_elmt){
@@ -139,3 +152,21 @@ function go_to(proj_id,video_id){
     }
     $("#recherche_results").collapse('hide')
 }
+
+function add_class_to_proj(){
+    li = userList.visibleItems;
+    for(k=0;k<li.length;k++){
+        if(li[k].elm.children[2].innerHTML == 'proj'){
+            li[k].elm.classList.add("card_proj")
+        }
+    }
+}
+
+window.addEventListener('keypress', function(){
+    document.getElementById('recherche_input').focus()
+});
+
+userList.on('updated', function(){
+    add_class();
+    add_class_to_proj();
+});

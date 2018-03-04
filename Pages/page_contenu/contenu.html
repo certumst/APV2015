@@ -140,7 +140,7 @@
          var page = `
          <div class="col-12 d-flex p-0">
                 <div class="col-6 p-0" >
-                    <video id="video" width="100%" controls >
+                    <video id="video" width="100%" controls autoplay >
                         <source src="http://binet-jtx.com<%= md %>" type="video/mp4"> Your browser does not support the video tag.
                     </video>
                 </div>
@@ -207,7 +207,7 @@
                             </thead>
                             <tbody>
                                 <% for(i=0;i<liste_videos.length;i++){ video=G_videos_json.find(vid=>vid.id==liste_videos[i])%>
-                                    <tr onclick="change_video(<%= video.id %>)" class="hover_pointer">
+                                    <tr onclick="change_video(<%= video.id %>)" class="hover_pointer" id="table_<%= video.id %>">
                                     <th scope="row"><%= i+1%></th>
                                     <td><%= video.titre%></td>
                                     <td><%= video.duree%></td>
@@ -238,6 +238,7 @@
             video_id = location.hash.split('video=')[1]
         }
         else{
+            document.getElementById('table_'+video_id).classList.remove('table-primary')   
             video_id = new_id
         }
         
@@ -258,14 +259,16 @@
             }
         }
 
-        console.log("L'id de la proj est : "+proj_id.toString())
-        console.log("L'id de la video est : "+video_id.toString())
+        // console.log("L'id de la proj est : "+proj_id.toString())
+        // console.log("L'id de la video est : "+video_id.toString())
         
 
         var compiled = _.template(page);
         document.getElementById('template_video').innerHTML = compiled(G_videos_json.find(vid=>vid.id==parseInt(video_id)))
         if(proj_id){
             document.getElementById(video_id).classList.add('bg-warning')
+            document.getElementById('table_'+video_id).classList.add('table-primary')
+                     
         }
 
         if(location.hash!='proj='+proj_id+'&video='+video_id.toString()){
@@ -273,7 +276,17 @@
         }
         
         $('body').scrollTo('#timeline-embed',500)
+        document.getElementById('video').play();
     }
+
+    document.getElementById('video').addEventListener('ended',
+        function (e) {
+            index = proj_en_cours.liste_videos.findIndex(k=>k==video_id)
+            if(index<proj_en_cours.liste_videos.length-1){
+                console.log('oui')
+                change_video(proj_en_cours.liste_videos[index+1])
+            }
+    });
     </script>   
 
 <script src="../js/recherche_js.js" type="text/javascript"></script>
