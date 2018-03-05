@@ -10,11 +10,14 @@
         <!-- <link href="main2015.css" rel="stylesheet" type="text/css"> -->
         <!-- Chargement des librairies -->
         <script src="../js/jquery/jquery.js" type="text/javascript"></script>
+        <script src="../js/popper.min.js" type="text/javascript"></script>
+        
         <script src="../js/bootstrap/bootstrap.js" type="text/javascript"></script>
         <script src="../js/list.js" type="text/javascript"></script>
         <script src="../js/timeline/timeline.js" type="text/javascript"></script>
         <script src="../js/underscore-min.js" type="text/javascript"></script>
         <script src="../js/jquery.scrollTo.min.js" type="text/javascript"></script>
+        
         <!-- Chargement des données des images et vidéos -->
         <!-- <script src="../../data/display.js" type="text/javascript"></script> -->
         <!-- <script src="../../data/videos.js" type="text/javascript"></script> -->
@@ -57,6 +60,7 @@
                                          <div class="card card_list" style="max-width:12em;" onclick="go_to(this.children[0].innerHTML, this.children[1].innerHTML)">
                                              <span class="proj" style="display:none;"></span>
                                              <span class="id" style="display:none;"></span>
+                                             <span class="type" style="display:none;"></span>
                                      <!-- The innerHTML of children with class="name" becomes this items "name" value -->
                                              <img class="card-img-top" src="../img/logo 2015.jpg" alt="Card image cap" >
                                              <div class="card-body p-2">
@@ -117,6 +121,10 @@
     </body>
 
     <script>
+
+       
+
+
         timeline_options={
            
         }
@@ -189,7 +197,10 @@
                     <div class="progress m-2">
                                 
                         <% for(i=0;i<liste_videos.length;i++){ video=G_videos_json.find(vid=>vid.id==liste_videos[i]) %>
-                            <div class="progress-bar bg-secondary" id="<%= video.id %>" onclick="change_video(<%= video.id %>)" role="progressbar" style="width: <%= video.duree %>%;margin-right:1px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-secondary hover_pointer" id="<%= video.id %>" onclick="change_video(<%= video.id %>)" role="progressbar" 
+                                style="width: <%= video.duree %>%;margin-right:1px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"
+                                data-toggle="tooltip" data-placement="bottom" title="<%= video.titre %>"
+                                >
                             </div>
                         <%} %>
                     </div>
@@ -227,6 +238,11 @@
     function change_video(new_id=0){
         console.log("changinf")
         console.log(new_id)
+
+        $(function () {
+                $('[data-toggle="tooltip"]').tooltip('dispose')
+        })
+
         if(new_id==0 || new_id.type=="hashchange"){
            
             proj_id = location.hash.split('proj=')[1]
@@ -253,6 +269,10 @@
             document.getElementById('titre_proj').innerHTML = proj_en_cours.titre
             timeline.goToId(proj_id)
 
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+
             if(!video_id){
                 //on n'a pas d'id video
                 video_id = proj_en_cours.liste_videos[0]
@@ -277,6 +297,7 @@
         
         $('body').scrollTo('#timeline-embed',500)
         document.getElementById('video').play();
+        $('[role="tooltip"]').tooltip('dispose')
     }
 
     document.getElementById('video').addEventListener('ended',
