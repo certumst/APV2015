@@ -186,7 +186,8 @@
                             </p>
                         </div>
                     </div>
-            
+                    
+                    <div id='videos_projs'></div>
                 </div>
             
             </div>             
@@ -265,7 +266,6 @@
             var compiled_proj_2 = _.template(page_proj_2);
             proj_en_cours = G_projs_json.find(p=>p.id==parseInt(proj_id))
             document.getElementById('template_proj_1').innerHTML = compiled_proj_1(proj_en_cours)
-            document.getElementById('template_proj_2').innerHTML = compiled_proj_2(proj_en_cours)            
             document.getElementById('titre_proj').innerHTML = proj_en_cours.titre
             timeline.goToId(proj_id)
 
@@ -287,8 +287,10 @@
         document.getElementById('template_video').innerHTML = compiled(G_videos_json.find(vid=>vid.id==parseInt(video_id)))
         if(proj_id){
             document.getElementById(video_id).classList.add('bg-warning')
+            var compiled_proj_2 = _.template(page_proj_2);
+            proj_en_cours = G_projs_json.find(p=>p.id==parseInt(proj_id))
+            document.getElementById('videos_projs').innerHTML = compiled_proj_2(proj_en_cours)       
             document.getElementById('table_'+video_id).classList.add('table-primary')
-                     
         }
 
         if(location.hash!='proj='+proj_id+'&video='+video_id.toString()){
