@@ -37,13 +37,14 @@ var options = {
         'id',
         'proj',
         'type',
+        'proj_name',
     ],
     page: 10,
     pagination: true
 };
 
 
-var userList = new List('users', options, G_videos_json);
+var userList = new List('users', options, G_videos_json.map(modify_videos));
 add_class_to_proj()
 userList.on('searchStart', prepare_search);
 userList.on('searchComplete', explain_search);
@@ -51,6 +52,16 @@ userList.on('searchComplete', explain_search);
 userList.add(G_projs_json.map(modify_projs))
 console.log('done')
 
+function modify_videos(currval,index){
+    var nex =  Object.assign({}, currval);
+    if(nex.proj!=0){
+        nex['proj_name'] = G_projs_json.find(p=>p.id==nex['proj']).titre
+    }
+    else{
+        nex['proj_name'] = ""
+    }
+    return nex
+}
 
 function modify_projs(currval, index){
     var nex =  Object.assign({}, currval);
