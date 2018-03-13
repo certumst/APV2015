@@ -7,21 +7,15 @@ var cequireste= [
     "Evenements/Evenements_binets/Kes/2017-01-05 Repas bipromo chanèze/HQ/Cracheur de feu.mp4",
     "Evenements/Evenements_binets/Kes/2017-05-10_AG_Kes/MQ/AG_Kes.mp4",
     "Evenements/Evenements_binets/TEDx/2017-01-11_TEDx/HQ/Moulierac.mp4",
-    "Evenements/Khomiss_et_Traditions/Battledress/2017-Battledress/MQ/Battledress_X2014.mp4",
     "Evenements/Militaire/2016-04-11 Amphi du Colonel Tourneur/HQ/Présentation.mp4",
     "Evenements/Militaire/2016-04-11 Amphi du Colonel Tourneur/HQ/Questions.mp4",
     "Evenements/Militaire/2017-03-15_Point_de_situation/MQ/2017-03-15_Point_de_situation.mp4",
-
-    
-   
-  
-
     // "Evenements/Spectacles_concerts/X_Broadway/2017-04_Aladdin/videos/HD/001a_Zapping.mp4",
     // "Evenements/Spectacles_concerts/X_Broadway/2017-04_Aladdin/videos/HD/002a_Aladdin_Acte1FINAL.mp4",
     // "Evenements/Spectacles_concerts/X_Broadway/2017-04_Aladdin/videos/HD/003a_Aladdin_Acte2FINAL.mp4",
-    "Projections_JTX/JTX2015_15_11_17/HD/Pour Aberlenc - prérendu Pulp-Shonen.mp4",
-    "Projections_JTX/JTX2015_31_05_17/HD/015a_Khâlviss'X.mp4",
-    "Projections_JTX/JTX2016_22_02_2018/preproj/HD/000a_Diapo_Photo.mp4"
+    // "Projections_JTX/JTX2015_15_11_17/HD/Pour Aberlenc - prérendu Pulp-Shonen.mp4",
+    // "Projections_JTX/JTX2015_31_05_17/HD/015a_Khâlviss'X.mp4",
+    // "Projections_JTX/JTX2016_22_02_2018/preproj/HD/000a_Diapo_Photo.mp4"
  ]
 
 var Spectacles_concerts = [ //cat 25

@@ -51,7 +51,7 @@
                             </ul>   
                     </div>
                     <form class="form-inline">
-                            <input class="form-control mr-sm-2" id="recherche_input" type="search" placeholder="Search" aria-label="Search">
+                            <input class="form-control mr-sm-2" id="recherche_input" type="search" placeholder="Rechercher  " aria-label="Search">
                     </form>
         </nav>
 
@@ -383,7 +383,8 @@
 
         
         var template_video = `
-                                        <div class="card card_list" style="max-width:12em;" onclick="go_to(this.children[0].innerHTML, this.children[1].innerHTML)">
+        <div class = "col-3 p-1">
+                                        <div class="card card_list" onclick="go_to(this.children[0].innerHTML, this.children[1].innerHTML)">
                                              <span class="proj" style="display:none;"><% if(type=="video"){print(proj);}else{print(id)} %></span>
                                              <span class="id" style="display:none;"><% if(type=="video"){print(id);}%></span>
                                              <span class="type" style="display:none;"><%= type %></span>
@@ -399,6 +400,7 @@
                                              </div>
                                              
                                          </div>
+        </div>
         `
         var compiled_video = _.template(template_video);          
         for(v=0;v<G_liste_spectacles.length;v++){

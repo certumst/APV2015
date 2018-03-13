@@ -273,12 +273,118 @@ var G_liste_evenements = [
 ]
 
 var G_liste_spectacles = [
+
     {
-        type:"video",
-        id:8301,
+        type:"proj",
+        id:151555,
     },
     {
         type:"proj",
-        id:335,
+        id:151544,
     },
+    {
+        type:"proj",
+        id:185153,
+    },
+    {
+        "type": "video",
+        "id": 125567
+     },
+     {
+        "type": "video",
+        "id": 125495
+     },
+     {
+        "type": "video",
+        "id": 125493
+     },
+     {
+        "type": "video",
+        "id": 125517
+     },
+     {
+        "type": "video",
+        "id": 125511
+     },
+     {
+        "type": "video",
+        "id": 125496
+     },
+     {
+        "type": "video",
+        "id": 125500
+     },
+     {
+        "type": "video",
+        "id": 125572
+     },
+     {
+        "type": "video",
+        "id": 125550
+     },
+     {
+        "type": "video",
+        "id": 125512
+     },
+     {
+        "type": "video",
+        "id": 125520
+     },
+     {
+        "type": "video",
+        "id": 125522
+     },
+     {
+        "type": "video",
+        "id": 125564
+     },
+     {
+        "type": "video",
+        "id": 125533
+     },
+
+     {
+        "type": "video",
+        "id": 125492
+     },
+     {
+        "type": "video",
+        "id": 125483
+     },
+     {
+        "type": "video",
+        "id": 125561
+     },
+     {
+        "type": "video",
+        "id": 125556
+     },
+     {
+        "type": "video",
+        "id": 125484
+     },
+     {
+        "type": "video",
+        "id": 125531
+     },
+     {
+        "type": "video",
+        "id": 125567
+     },
+     {
+        "type": "video",
+        "id": 125560
+     },
+     {
+        "type": "video",
+        "id": 125522
+     },
+     {
+        "type": "video",
+        "id": 125507
+     },
+     {
+        "type": "video",
+        "id": 125561
+     }
 ]
