@@ -15,7 +15,7 @@ function get_all_videos_of_proj(proj_id){
     return liste_vids
 }
 
-function add_videos(liste_index, proj_index, promo){
+function add_videos(liste_index, proj_index, promo, proj_name){
     for(i=0;i<liste_index.length;i++){
         v = site_jtx.find(function(elmt){
             return elmt.model == "videos.video" && elmt.pk == liste_index[i]
@@ -25,6 +25,7 @@ function add_videos(liste_index, proj_index, promo){
         v.fields['auteurs'] = get_auteurs(v.pk)
         v.fields['tags'] = get_tags(v.pk)
         v.fields['acteurs'] = ""
+        v.fields['proj_name'] = proj_name
         v.fields['type'] = "video"
         v.fields['promo'] = promo
         already_added.push( v.fields['hd'].split('/videos/')[1])
@@ -73,7 +74,7 @@ function add_proj(proj_id, true_date=0){
     p.fields['image'] = '../../Contenu/Affiches/'+p.fields['image'].split('/videos/')[1]
     if(true_date!=0){p.fields['date']=true_date.date}
     projs.push(p.fields)
-    add_videos(liste_videos, proj_id, p.fields['promo'])
+    add_videos(liste_videos, proj_id, p.fields['promo'], p.fields['titre'])
 
     return "Ajout de la proj terminé : " + p.fields.titre
 }
