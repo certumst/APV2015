@@ -388,3 +388,10 @@ var G_liste_spectacles = [
         "id": 125561
      }
 ]
+
+var G_liste_inter = [
+    {
+        type:"video",
+        id:125560,
+    }    
+]

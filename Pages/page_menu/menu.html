@@ -256,6 +256,12 @@
                         <div class="col-12" style="height:50px;"></div>
                         <h1 class="display-3 text-white">Interviews</h1>
                         <div class="dropdown-divider"></div>
+                        <div id="inter">
+                                <div class="list d-flex col-12 flex-wrap" id="list_inter">
+        
+                                   
+                                </div>
+                        </div>
                 </div>  
 
         </div>
@@ -412,7 +418,16 @@
             else{
                 document.getElementById('list_specs').innerHTML+=compiled_video(G_projs_json.find(e=>e.id==G_liste_spectacles[v].id))                
             }
-            
+        }
+
+        //Remplissage des interviews : 
+        for(v=0;v<G_liste_inter.length;v++){
+            if(G_liste_inter[v].type=="video"){
+                document.getElementById('list_inter').innerHTML+=compiled_video(G_videos_json.find(e=>e.id==G_liste_inter[v].id))
+            }
+            else{
+                document.getElementById('list_inter').innerHTML+=compiled_video(G_projs_json.find(e=>e.id==G_liste_inter[v].id))                
+            }
         }
     </script>
 
