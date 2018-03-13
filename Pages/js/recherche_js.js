@@ -1,3 +1,5 @@
+
+
 $('#recherche_input').on('focus', function(){
     // $('#recherche_results').collapse('show')
 });
@@ -44,9 +46,8 @@ var options = {
 var userList = new List('users', options, G_videos_json);
 add_class_to_proj()
 userList.on('searchStart', prepare_search);
-// userList.on('searchComplete',add_class);
 userList.on('searchComplete', explain_search);
-
+// userList.on('searchComplete',add_class);
 userList.add(G_projs_json.map(modify_projs))
 console.log('done')
 
@@ -68,6 +69,7 @@ function add_class(){
 }
 
 function explain_search(){
+    
     add_class_to_proj();
     userList.sort('type', { order: "asc" });
     prop_search = ['titre','auteurs','date','tags','acteurs',]
@@ -157,7 +159,10 @@ function add_class_to_proj(){
     li = userList.visibleItems;
     for(k=0;k<li.length;k++){
         if(li[k].elm.children[2].innerHTML == 'proj'){
-            li[k].elm.classList.add("card_proj")
+            li[k].elm.children[4].children[1].classList.remove('badge-warning')
+            li[k].elm.children[4].children[1].classList.add('badge-success')
+            li[k].elm.children[4].children[1].innerHTML = "Proj"
+            
         }
     }
 }
@@ -166,7 +171,19 @@ window.addEventListener('keypress', function(){
     document.getElementById('recherche_input').focus()
 });
 
-userList.on('updated', function(){
-    add_class();
+var previous_state;
+userList.on('updated', function(e){
+    // add_class();
     add_class_to_proj();
+    console.log("Updating...")
+    if(previous_state){
+        if(previous_state.i!=e.i){
+            // on a changé de page
+            console.log("previous:", previous_state.i, " - new : ", e.i)
+            previous_state = Object.assign({}, e);
+            prepare_search();
+            explain_search();
+        }
+    }
+    previous_state = Object.assign({}, e);
 });

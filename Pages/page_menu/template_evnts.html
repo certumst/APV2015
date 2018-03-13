@@ -1,10 +1,10 @@
-<div class="col-3">
+<div class="col-3 p-1">
     <div class="card ">
         <!-- The innerHTML of children with class="name" becomes this items "name" value -->
         <img class="card-img-top" src="<%= evnt_image %>" alt="Card image cap">
         <div class="card-body p-2">
             <h5 class="titre card_list card-title m-0" data-toggle="collapse" data-target="<%= "#" + collapse_id %>" aria-expanded="false" role="button"><%= titre %></h5>
-            <div id="<%= collapse_id %>" class="collapse collapse_id">
+            <div id="<%= collapse_id %>" class="collapse collapse_id" style="padding-top:10px;">
 
                 <ul class="nav nav-tabs" role="tablist">
                     <% for(k=0;k<content.length;k++){ %>

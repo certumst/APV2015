@@ -159,3 +159,17 @@ body{
   .card_proj{
       background-color: red;
   }
+
+  #sponsor_div{
+      background-color: #343A40;
+      position: absolute;
+    top:150px;
+    left:0px;
+    width: 6em;
+  }
+
+  .sponsor_img{
+
+      -webkit-filter: grayscale(100%) invert(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%) invert(100%);
+  }

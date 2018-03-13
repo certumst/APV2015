@@ -1,5 +1,7 @@
 var videos = [];
 var projs = [];
+var already_added = [];
+var restant = [];
 
 function get_all_videos_of_proj(proj_id){
     //renvoie une liste avec tous les ids des vidéos qui sont dans la proj.
@@ -25,6 +27,10 @@ function add_videos(liste_index, proj_index, promo){
         v.fields['acteurs'] = ""
         v.fields['type'] = "video"
         v.fields['promo'] = promo
+        already_added.push( v.fields['hd'].split('/videos/')[1])
+        v.fields['hd'] = "../../Contenu/" + v.fields['hd'].split('/videos/')[1]
+        v.fields['screenshot'] = "../../Contenu/" + v.fields['screenshot'].split('/videos/')[1]
+        v.fields['subtitles'] = "../../Contenu/" + v.fields['subtitles'].split('/videos/')[1]
         videos.push(v.fields)
     }
 }
@@ -64,6 +70,7 @@ function add_proj(proj_id, true_date=0){
     p.fields['liste_videos'] = liste_videos
     p.fields['id'] = p.pk
     p.fields['type'] = "proj"
+    p.fields['image'] = '../../Contenu/Affiches/'+p.fields['image'].split('/videos/')[1]
     if(true_date!=0){p.fields['date']=true_date.date}
     projs.push(p.fields)
     add_videos(liste_videos, proj_id, p.fields['promo'])
@@ -84,7 +91,7 @@ function search_proj_id(jtx_year){
     return id_l
 }
 
-function create_db(projs_ids, dates){
+function create_db(projs_ids, dates, total_db){
      
     
     for(k=0;k<projs_ids.length;k++){
@@ -99,7 +106,26 @@ function create_db(projs_ids, dates){
         
         console.log('adding proj '+ k.toString())
     }
+
+    compare_to_total(total_db);
     
+}
+
+function compare_to_total(liste_url){
+    c=0;
+    d=0;
+    for(index=0;index<liste_url.length;index++){
+        if(!liste_url[index].includes('.srt' )){
+            d++;
+            if(!already_added.includes(liste_url[index])){
+                restant.push(liste_url[index])
+            }
+            else{
+                c=c+1;
+            }
+        }
+    }
+    console.log(c,' videos reconnues sur ', d)
 }
 
 

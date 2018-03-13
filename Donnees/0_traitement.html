@@ -12,6 +12,9 @@
 
     <script src="bdd_site_jtx.js" type="text/javascript"></script>
     <script src="bdd_site_traitement.js" type="text/javascript"></script>
+    <script src="all_files.js" type="text/javascript"></script>
+    <script src="restant.js" type="text/javascript"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -132,8 +135,9 @@
     function generer_projs(){
         projs_ids = JSON.parse(document.getElementById('projs_ids').value.trim())
         projs_dates = JSON.parse(document.getElementById('projs_dates').value.trim())
+        total_files = all_files
         console.log(projs_ids)
-        create_db(projs_ids.value, projs_dates)
+        create_db(projs_ids.value, projs_dates, total_files)
         document.getElementById('text_projs').value = "var G_projs_json = " + JSON.stringify(projs, null, 3)
         document.getElementById('text_videos').value = "var G_videos_json = " + JSON.stringify(videos, null, 3)
         document.getElementById('text_timeline').value = "var events_t = "+ JSON.stringify(get_json_for_timeline(), null, 3)
@@ -158,24 +162,6 @@
     }
 
 
-
-    // var liste_e = []
-    // function get_frankiz_events(){
-        
-    //     for(year=2015;year<2018;year++){
-    //         for(k=1;k<13;k++){
-    //             $.get(
-    //                 "https://www.frankiz.net/activity/ajax/timetable/activity/", 
-    //                 {"showdate":k.toString()+"/1/"+year, "viewtype":"month", "timezone":1}, 
-    //                 function(data){
-    //                     liste_e.concat(data.events)
-    //                 }
-    //             )
-    //         }
-    //     }
-        
-       
-    // }
 
     
 
