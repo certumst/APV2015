@@ -38,6 +38,7 @@ var options = {
         'proj',
         'type',
         'proj_name',
+        {name:'screenshot',attr:'src'},
     ],
     page: 10,
     pagination: true
