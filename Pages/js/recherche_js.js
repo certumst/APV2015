@@ -39,6 +39,7 @@ var options = {
         'type',
         'proj_name',
         {name:'screenshot',attr:'src'},
+        {name:'image',attr:'src'},
     ],
     page: 10,
     pagination: true
@@ -49,7 +50,7 @@ var userList = new List('users', options, G_videos_json.map(modify_videos));
 add_class_to_proj()
 userList.on('searchStart', prepare_search);
 userList.on('searchComplete', explain_search);
-// userList.on('searchComplete',add_class);
+userList.on('searchComplete',add_class);
 userList.add(G_projs_json.map(modify_projs))
 console.log('done')
 
@@ -103,6 +104,7 @@ function explain_search(){
             }
         }
     }
+    add_class()
 }
 
 function add_footer(div_elmt, prop, val){
@@ -197,5 +199,8 @@ userList.on('updated', function(e){
             explain_search();
         }
     }
+    add_class()
     previous_state = Object.assign({}, e);
 });
+
+userList.on('searchComplete', add_class)

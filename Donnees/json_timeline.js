@@ -123,28 +123,6 @@ var events_t = [
 	{
 	   "start_date": {
 		  "month": "09",
-		  "day": "02",
-		  "year": "2017"
-	   },
-	   "text": {
-		  "headline": "Incorpo X2017 - Sections"
-	   },
-	   "unique_id": "260"
-	},
-	{
-	   "start_date": {
-		  "month": "09",
-		  "day": "04",
-		  "year": "2017"
-	   },
-	   "text": {
-		  "headline": "Incorpo X2017 - Stages"
-	   },
-	   "unique_id": "261"
-	},
-	{
-	   "start_date": {
-		  "month": "09",
 		  "day": "30",
 		  "year": "2017"
 	   },
@@ -353,17 +331,6 @@ var events_t = [
 	},
 	{
 	   "start_date": {
-		  "month": "03",
-		  "day": "12",
-		  "year": "2016"
-	   },
-	   "text": {
-		  "headline": "TSGED 2016"
-	   },
-	   "unique_id": "323"
-	},
-	{
-	   "start_date": {
 		  "month": "11",
 		  "day": "09",
 		  "year": "2016"
@@ -386,17 +353,6 @@ var events_t = [
 	},
 	{
 	   "start_date": {
-		  "month": "02",
-		  "day": "15",
-		  "year": "2016"
-	   },
-	   "text": {
-		  "headline": "JTX 2014 - Proj de février"
-	   },
-	   "unique_id": "338"
-	},
-	{
-	   "start_date": {
 		  "month": "03",
 		  "day": "24",
 		  "year": "2017"
@@ -405,17 +361,6 @@ var events_t = [
 		  "headline": "Amphi de départ des 2014"
 	   },
 	   "unique_id": "410"
-	},
-	{
-	   "start_date": {
-		  "month": "04",
-		  "day": "15",
-		  "year": "2016"
-	   },
-	   "text": {
-		  "headline": "Proj' des 25 ans"
-	   },
-	   "unique_id": "434"
 	},
 	{
 	   "start_date": {
@@ -462,4 +407,3 @@ var events_t = [
 	   "unique_id": "254"
 	}
  ]
-

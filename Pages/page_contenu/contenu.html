@@ -49,7 +49,7 @@
                             <input class="form-control mr-sm-2" id="recherche_input" type="hash" placeholder="Rechercher" aria-label="hash">
                     </form>
         </nav>
-        <div class="collapse fixed-top bg-dark text-light" id="recherche_results" style="top:50px;">
+        <div class="collapse fixed-top bg-dark text-light" id="recherche_results" style="top:50px;padding-top:20px;">
                 
  
                          <div id="users" class="text-dark">
@@ -63,7 +63,7 @@
                                                 <span class="proj" style="display:none;"></span>
                                                 <span class="id" style="display:none;"></span>
                                                 <span class="type" style="display:none;"></span>
-                                                <img class="card-img-top screenshot" src="../img/logo 2015.jpg" alt="Card image cap" >
+                                                <img class="card-img-top screenshot image" src="../img/logo 2015.jpg" alt="Card image cap" >
                                                 <div class="card-body p-2">
                                                     <h5 class="titre card-title m-0 text-capitalize"></h5>
                                                     <!-- <span class="badge badge-dark">JTX<span class="promo"></span></span> -->
@@ -302,6 +302,8 @@
 
         
         if(proj_id=="0" || !proj_id){
+            document.getElementById('titre_proj').innerHTML = ""
+            document.getElementById('template_proj_1').innerHTML = ""            
             window.location.hash = 'video='+video_id.toString()
         }
         else{
@@ -313,16 +315,22 @@
         $('body').scrollTo('#timeline-embed',500)
         document.getElementById('video').play();
         $('[role="tooltip"]').tooltip('dispose')
+
+        if(proj_id && proj_id!="0"){    
+            document.getElementById('video').addEventListener('ended',
+            function (e) {
+                console.log('going to next...')
+                index = proj_en_cours.liste_videos.findIndex(k=>k==video_id)
+                if(index<proj_en_cours.liste_videos.length-1){
+                    console.log('oui')
+                    change_video(proj_en_cours.liste_videos[index+1])
+                }
+            });
+        }
+        
     }
 
-    document.getElementById('video').addEventListener('ended',
-        function (e) {
-            index = proj_en_cours.liste_videos.findIndex(k=>k==video_id)
-            if(index<proj_en_cours.liste_videos.length-1){
-                console.log('oui')
-                change_video(proj_en_cours.liste_videos[index+1])
-            }
-    });
+    
     </script>   
 
 <script src="../js/recherche_js.js" type="text/javascript"></script>
