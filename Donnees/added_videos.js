@@ -1530,21 +1530,7 @@ var added_videos =
        "proj": 0,
        "subtitles": "../../Contenu/empty.vtt"
     },
-    {
-       "category": 25,
-       "description": "Pas de description disponible.",
-       "screenshot": "../../Contenu/screenshot.png",
-       "duree": 0,
-       "hd": "../../Contenu/Evenements/Autres/Grand_Magnan_2017/rétro_grand_magnan_2017.mp4",
-       "auteurs": "",
-       "id": 125492,
-       "type": "video",
-       "acteurs": "",
-       "promo": 2015,
-       "titre": "Grand Magnan 2017",
-       "proj": 0,
-       "subtitles": "../../Contenu/empty.vtt"
-    },
+  
     {
        "category": 25,
        "description": "Pas de description disponible.",
