@@ -17,6 +17,32 @@ var cequireste= [
     // "Projections_JTX/JTX2015_31_05_17/HD/015a_Khâlviss'X.mp4",
     // "Projections_JTX/JTX2016_22_02_2018/preproj/HD/000a_Diapo_Photo.mp4"
  ]
+var bonus = [                                                                                                  
+    "Divers/Le bus du WEI/Les ombres de la colère.mp4",               
+    "Divers/Le bus du WEI/Enquête de sens.mp4",                       
+    "Divers/Le bus du WEI/Le 78e passager.mp4",                       
+    "Divers/Le bus du WEI/La rage.mp4 "  ,                            
+    "Divers/Le bus du WEI/RAP thémis.mp4"     ,                       
+    "Divers/Rushs/061 Pas si vite le Semite.MOV "       ,             
+    "Divers/Rushs/De tous les binets, cest le jtx que je préfère.MTS",
+    "Divers/Com/Trailer X-ride.mp4"       ,                           
+    "Divers/Com/Com trombino.mp4 "             ,                      
+    "Divers/Com/com Lipdub sans personne.mp4 "        ,               
+    "Divers/Com/Dezpacito.mp4"               ,                        
+    "Divers/Com/HarryPotter.mp4"      ,                               
+    "Divers/Com/HarryPotter2.mp4"        ,                            
+    "Divers/Com/Saut à l'elastique deltos.mp4 "    ,                  
+    "Divers/Com/Trailer proj Novembre JTX2015.mp4"    ,               
+    "Divers/Rétros/Happening X-Broadway.mp4  "  ,                     
+    "Divers/Rétros/Retro_marche_aux_omegas.mp4   "    ,               
+    "Divers/Rétros/Préparation proj de ces crottes de 14.mp4   "   ,  
+    "Divers/Rétros/Défilé_mieux.mp4"    ,                          
+    "Divers/Random/Houlgate.mp4  "        ,                           
+    "Divers/Random/Maman j'ai raté le Styx.mp4    "   ,               
+    "Divers/Random/Plaque Etienne Geoffret.mp4  "    ,                
+    "Divers/Random/Random bail d'un 16 - la Kèstapo.mp4"   ,          
+    'Divers/Random/Vive le vent.mp4'         
+]
 
 var Spectacles_concerts = [ //cat 25
     "Evenements/Spectacles_concerts/Concerts_Chorale/2017-03-07_Concert_Chorale_Eglise_Saint-Eustache/MQ/2017-03-07_Concert_Chorale_Eglise_Saint-Eustache.mp4",
@@ -199,7 +225,7 @@ function add_projs_restantes(){
             ids.push(to_add[k].id+j)
         }
         to_add[k].liste_videos = ids
-        to_add[k]['image'] = "../../Contenu/default_proj.jpg",
+        to_add[k]['image'] = "default_proj.jpg",
         a_proj.push(to_add[k])
     }
 }
@@ -228,10 +254,10 @@ function add_video_res(link, cat, idd, proj=0, promo=2015){
     jso = {};
     jso['category'] = cat
     jso['description'] = 'Pas de description disponible.'
-    jso['screenshot'] = '../../Contenu/screenshot.png'
-    jso['subtitles'] = '../../Contenu/empty.vtt'
+    jso['screenshot'] = 'screenshot.png'
+    jso['subtitles'] = 'empty.vtt'
     jso['duree'] = 0,
-    jso['hd'] = '../../Contenu/'+link
+    jso['hd'] = '../../Contenu/'+link.trim()
     jso['auteurs']=""
     jso['id'] = idd
     jso['type']='video'
