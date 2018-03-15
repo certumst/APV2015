@@ -20,7 +20,8 @@
         <script src="../../Donnees/videos_json_true.js" type="text/javascript"></script> 
         <script src="../../Donnees/added_projs.js" type="text/javascript"></script>  
         <script src="../../Donnees/added_videos.js" type="text/javascript"></script>          
-        
+        <script src="../../patch/patch_projs.js" type="text/javascript"></script>    
+        <script src="../../patch/patch_videos.js" type="text/javascript"></script>                   
         <!-- <script src="../../data/display.js" type="text/javascript"></script> -->
         <!-- <script src="../../data/videos.js" type="text/javascript"></script> -->
     </head>
@@ -320,8 +321,8 @@
     </body>
 
     <script>
-        G_projs_json = G_projs_json.concat(added_projs)
-        G_videos_json = G_videos_json.concat(added_videos)
+        G_projs_json = G_projs_json.concat(added_projs).concat(patch_projs)
+        G_videos_json = G_videos_json.concat(added_videos).concat(patch_videos)
 
         //Initialisation de la liste des projs :
         

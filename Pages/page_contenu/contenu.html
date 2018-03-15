@@ -27,7 +27,9 @@
         <script src="../../Donnees/projs_json_true.js" type="text/javascript"></script> 
         <script src="../../Donnees/videos_json_true.js" type="text/javascript"></script>
         <script src="../../Donnees/added_projs.js" type="text/javascript"></script>  
-        <script src="../../Donnees/added_videos.js" type="text/javascript"></script>          
+        <script src="../../Donnees/added_videos.js" type="text/javascript"></script>   
+        <script src="../../patch/patch_projs.js" type="text/javascript"></script>    
+        <script src="../../patch/patch_videos.js" type="text/javascript"></script>                   
         <link href="../css/main2015.css" rel="stylesheet" type="text/css">
         
     </head>
@@ -126,11 +128,8 @@
     </body>
 
     <script>
-        G_projs_json = G_projs_json.concat(added_projs)
-        G_videos_json = G_videos_json.concat(added_videos)
-
-       
-
+        G_projs_json = G_projs_json.concat(added_projs).concat(patch_projs)
+        G_videos_json = G_videos_json.concat(added_videos).concat(patch_videos)
 
         timeline_options={
            
@@ -156,7 +155,9 @@
          <div class="col-12 d-flex p-0">
                 <div class="col-6 p-0" >
                     <video id="video" width="100%" controls autoplay >
-                        <source src="http://binet-jtx.com<%= hd %>" type="video/mp4"> Your browser does not support the video tag.
+                        <source src="<%= hd %>" type="video/mp4">
+                        <track label="Français" kind="subtitles" srclang="fr" src="<%= subtitles %>" default>
+                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div class="col-6 p-0">
