@@ -5,7 +5,7 @@
 var added_projs = [
     {
         "titre": "Prépass du JTX2015",
-        "image": "/videos/default_proj.jpg",
+        "image": "../../Contenu/Affiches/default_proj.jpg",
         "type": "proj",
         "category": 15150,
         "id": 157150,
@@ -72,7 +72,7 @@ var added_projs = [
      },
      {
         "titre": "VDJ Originales by Armand Lacombe",
-        "image": "/videos/default_proj.jpg",
+        "image": "../../Contenu/Affiches/default_proj.jpg",
         "type": "proj",
         "category": 15151,
         "id": 151151,
@@ -99,7 +99,7 @@ var added_projs = [
      },
      {
         "titre": "Sywoc 2017",
-        "image": "/videos/default_proj.jpg",
+        "image": "../../Contenu/Affiches/default_proj.jpg",
         "type": "proj",
         "category": 11,
         "id": 151552,
@@ -118,7 +118,7 @@ var added_projs = [
      },
      {
         "titre": "Le Roi Lion, X-Broadway 2014",
-        "image": "/videos/default_proj.jpg",
+        "image": "../../Contenu/Affiches/default_proj.jpg",
         "type": "proj",
         "category": 25,
         "id": 185153,
@@ -131,7 +131,7 @@ var added_projs = [
      },
      {
         "titre": "Concours de Piano - Janvier 2017",
-        "image": "/videos/default_proj.jpg",
+        "image": "../../Contenu/Affiches/default_proj.jpg",
         "type": "proj",
         "category": 25,
         "id": 151544,
@@ -145,7 +145,7 @@ var added_projs = [
      },
      {
         "titre": "Soirée X-Tra - Conccert Chorale - Octobre 2016",
-        "image": "/videos/default_proj.jpg",
+        "image": "../../Contenu/Affiches/default_proj.jpg",
         "type": "proj",
         "category": 25,
         "id": 151555,
