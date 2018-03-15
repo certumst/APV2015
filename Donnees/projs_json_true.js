@@ -4,7 +4,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 636,
 	   "promo": 2016,
-	   "image": "../../Contenu/Affiches/affiches/JTX 2016/logo 2016.png",
+	   "image": "../../Contenu/affiches/JTX 2016/logo 2016.png",
 	   "date": "2017-10-19",
 	   "titre": "Coupe de l'X 2017",
 	   "liste_videos": [
@@ -35,7 +35,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 346,
 	   "promo": 2016,
-	   "image": "../../Contenu/Affiches/affiches/kes.png",
+	   "image": "../../Contenu/affiches/kes.png",
 	   "date": "2017-11-17",
 	   "titre": "Campagne Kès des 2016 - Pré-campagne (Révélation et débat)",
 	   "liste_videos": [
@@ -51,7 +51,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 866,
 	   "promo": 2016,
-	   "image": "../../Contenu/Affiches/affiches/kes.png",
+	   "image": "../../Contenu/affiches/kes.png",
 	   "date": "2017-11-20",
 	   "titre": "Campagne Kès des 2016 - Listes",
 	   "liste_videos": [
@@ -107,7 +107,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 665,
 	   "promo": 2016,
-	   "image": "../../Contenu/Affiches/affiches/kes.png",
+	   "image": "../../Contenu/affiches/kes.png",
 	   "date": "2017-11-24",
 	   "titre": "Campagne Kès des 2016 - Proj de mi-campagne",
 	   "liste_videos": [
@@ -138,7 +138,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 631,
 	   "promo": 2016,
-	   "image": "../../Contenu/Affiches/affiches/kes.png",
+	   "image": "../../Contenu/affiches/kes.png",
 	   "date": "2017-11-27",
 	   "titre": "Campagne Kès des 2016 - Résultats",
 	   "liste_videos": [
@@ -174,7 +174,7 @@ var G_projs_json = [
 	   "description": "Proj' de février du JTX 2016, baptisée \"Proj'et promotion\". Elle a été projetée en .K le 21/02/2018.",
 	   "views": 1057,
 	   "promo": 2016,
-	   "image": "../../Contenu/Affiches/Projections_JTX/JTX2016_22_02_2018/affiche.png",
+	   "image": "../../Contenu/Projections_JTX/JTX2016_22_02_2018/affiche.png",
 	   "date": "2018-02-22",
 	   "titre": "JTX 2016 - Proj de février",
 	   "liste_videos": [
@@ -245,7 +245,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 150,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/JTX 2015/logo 2015.jpg",
+	   "image": "../../Contenu/affiches/JTX 2015/logo 2015.jpg",
 	   "date": "2017-10-27",
 	   "titre": "Semaine internationale - Houlgate 2017",
 	   "liste_videos": [
@@ -271,7 +271,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 224,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/kes.png",
+	   "image": "../../Contenu/affiches/kes.png",
 	   "date": "2016-11-13",
 	   "titre": "Campagne Kès des X2015 - Listes",
 	   "liste_videos": [
@@ -314,7 +314,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 166,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/kes.png",
+	   "image": "../../Contenu/affiches/kes.png",
 	   "date": "2016-11-17",
 	   "titre": "Campagne Kès des X2015 - Campagne",
 	   "liste_videos": [
@@ -348,7 +348,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 190,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/kes.png",
+	   "image": "../../Contenu/affiches/kes.png",
 	   "date": "2016-11-22",
 	   "titre": "Campagne Kès des X2015 - Résultats",
 	   "liste_videos": [
@@ -379,7 +379,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 447,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/Evenements/Amphi_presentation_binets/2016/affiche.png",
+	   "image": "../../Contenu/Evenements/Amphi_presentation_binets/2016/affiche.png",
 	   "date": "2017-04-05",
 	   "titre": "Amphi binets 2016",
 	   "liste_videos": [
@@ -520,7 +520,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 449,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/courtine.jpg",
+	   "image": "../../Contenu/affiches/courtine.jpg",
 	   "date": "2017-09-30",
 	   "titre": "Incorpo X2017 - La Courtine",
 	   "liste_videos": [
@@ -555,7 +555,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 225,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/raid.jpg",
+	   "image": "../../Contenu/affiches/raid.jpg",
 	   "date": "2017-05-08",
 	   "titre": "Raid X-Areva - 2017",
 	   "liste_videos": [
@@ -578,7 +578,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 96,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/JTX 2015/logo 2015.jpg",
+	   "image": "../../Contenu/affiches/JTX 2015/logo 2015.jpg",
 	   "date": "2017-04-10",
 	   "titre": "WEI X2016",
 	   "liste_videos": [
@@ -603,7 +603,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 185,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/JTX 2015/logo 2015.jpg",
+	   "image": "../../Contenu/affiches/JTX 2015/logo 2015.jpg",
 	   "date": "2016-10-14",
 	   "titre": "Coupe de l'X 2016",
 	   "liste_videos": [
@@ -631,7 +631,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 211,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/tsged.png",
+	   "image": "../../Contenu/affiches/tsged.png",
 	   "date": "2017-03-04",
 	   "titre": "TSGED 2017",
 	   "liste_videos": [
@@ -652,7 +652,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 362,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/JTX 2015/demay.png",
+	   "image": "../../Contenu/affiches/JTX 2015/demay.png",
 	   "date": "2017-05-02",
 	   "titre": "JTX 2015 - Proj de mai",
 	   "liste_videos": [
@@ -709,7 +709,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 221,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/JTX 2015/fevrier.png",
+	   "image": "../../Contenu/affiches/JTX 2015/fevrier.png",
 	   "date": "2017-02-23",
 	   "titre": "JTX 2015 - Proj de février",
 	   "liste_videos": [
@@ -770,7 +770,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 2406,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/Jack.png",
+	   "image": "../../Contenu/affiches/Jack.png",
 	   "date": "2017-11-16",
 	   "titre": "JTX 2015 - Proj de novembre",
 	   "liste_videos": [
@@ -811,7 +811,7 @@ var G_projs_json = [
 	   "description": "Long-métrage du JTX 2015 diffusé en .K lors d'une projection spéciale",
 	   "views": 761,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/affiches/JTX 2015/logo 2015.jpg",
+	   "image": "../../Contenu/affiches/JTX 2015/logo 2015.jpg",
 	   "date": "2017-12-12",
 	   "titre": "Proj Suprémacie - Long-métrage JTX 2015",
 	   "liste_videos": [
@@ -828,7 +828,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 245,
 	   "promo": 2015,
-	   "image": "../../Contenu/Affiches/Evenements/Spectacles_concerts/X_Broadway/2017-04_Aladdin",
+	   "image": "../../Contenu/Evenements/Spectacles_concerts/X_Broadway/2017-04_Aladdin",
 	   "date": "2018-02-08",
 	   "titre": "Proj Broadway 2015 : Aladdin",
 	   "liste_videos": [
@@ -844,7 +844,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 232,
 	   "promo": 2014,
-	   "image": "../../Contenu/Affiches/default_proj.jpg",
+	   "image": "../../Contenu/default_proj.jpg",
 	   "date": "2016-04-14",
 	   "titre": "Amphi binets 2015",
 	   "liste_videos": [
@@ -1000,7 +1000,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 197,
 	   "promo": 2014,
-	   "image": "../../Contenu/Affiches/default_proj.jpg",
+	   "image": "../../Contenu/default_proj.jpg",
 	   "date": "2016-09-01",
 	   "titre": "Incorpo X2016 - Sections",
 	   "liste_videos": [
@@ -1113,7 +1113,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 54,
 	   "promo": 2014,
-	   "image": "../../Contenu/Affiches/default_proj.jpg",
+	   "image": "../../Contenu/default_proj.jpg",
 	   "date": "2016-09-03",
 	   "titre": "Incorpo X2016 - Stages",
 	   "liste_videos": [
@@ -1144,7 +1144,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 77,
 	   "promo": 2014,
-	   "image": "../../Contenu/Affiches/default_proj.jpg",
+	   "image": "../../Contenu/default_proj.jpg",
 	   "date": "2016-09-05",
 	   "titre": "Incorpo X2016 - Chasse au trésor",
 	   "liste_videos": [
@@ -1177,7 +1177,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 98,
 	   "promo": 2014,
-	   "image": "../../Contenu/Affiches/affiches/courtine.jpg",
+	   "image": "../../Contenu/affiches/courtine.jpg",
 	   "date": "2016-09-28",
 	   "titre": "Incorpo X2016 - La Courtine",
 	   "liste_videos": [
@@ -1220,7 +1220,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 30,
 	   "promo": 2014,
-	   "image": "../../Contenu/Affiches/default_proj.jpg",
+	   "image": "../../Contenu/default_proj.jpg",
 	   "date": "2016-09-07",
 	   "titre": "Incorpo X2016 - NOVA",
 	   "liste_videos": [
@@ -1235,7 +1235,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 134,
 	   "promo": 2014,
-	   "image": "../../Contenu/Affiches/affiches/raid.jpg",
+	   "image": "../../Contenu/affiches/raid.jpg",
 	   "date": "2016-05-16",
 	   "titre": "Raid X-Areva - 2016",
 	   "liste_videos": [
@@ -1258,7 +1258,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 28,
 	   "promo": 2014,
-	   "image": "../../Contenu/Affiches/default_proj.jpg",
+	   "image": "../../Contenu/default_proj.jpg",
 	   "date": "2016-04-10",
 	   "titre": "WEI X2015",
 	   "liste_videos": [
@@ -1284,7 +1284,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 3,
 	   "promo": 2014,
-	   "image": "../../Contenu/Affiches/default_proj.jpg",
+	   "image": "../../Contenu/default_proj.jpg",
 	   "date": "2016-05-30",
 	   "titre": "Campagne CA - X2015",
 	   "liste_videos": [
@@ -1305,7 +1305,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 199,
 	   "promo": 2014,
-	   "image": "../../Contenu/Affiches/affiches/JTX 2014/novembre.png",
+	   "image": "../../Contenu/affiches/JTX 2014/novembre.png",
 	   "date": "2016-11-09",
 	   "titre": "JTX 2014 - Proj de novembre",
 	   "liste_videos": [
@@ -1360,7 +1360,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 145,
 	   "promo": 2014,
-	   "image": "../../Contenu/Affiches/affiches/JTX 2014/juin.png",
+	   "image": "../../Contenu/affiches/JTX 2014/juin.png",
 	   "date": "2016-06-08",
 	   "titre": "JTX 2014 - Proj de juin",
 	   "liste_videos": [
@@ -1407,7 +1407,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 210,
 	   "promo": 2014,
-	   "image": "../../Contenu/Affiches/default_proj.jpg",
+	   "image": "../../Contenu/default_proj.jpg",
 	   "date": "2017-03-24",
 	   "titre": "Amphi de départ des 2014",
 	   "liste_videos": [
@@ -1447,7 +1447,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 15,
 	   "promo": 2013,
-	   "image": "../../Contenu/Affiches/default_proj.jpg",
+	   "image": "../../Contenu/default_proj.jpg",
 	   "date": "2015-09-20",
 	   "titre": "Incorpo X2015 - WED",
 	   "liste_videos": [
@@ -1483,7 +1483,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 45,
 	   "promo": 2013,
-	   "image": "../../Contenu/Affiches/default_proj.jpg",
+	   "image": "../../Contenu/default_proj.jpg",
 	   "date": "2015-09-02",
 	   "titre": "Incorpo X2015 - Sections",
 	   "liste_videos": [
@@ -1572,7 +1572,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 27,
 	   "promo": 2013,
-	   "image": "../../Contenu/Affiches/default_proj.jpg",
+	   "image": "../../Contenu/default_proj.jpg",
 	   "date": "2015-09-04",
 	   "titre": "Incorpo X2015 - Stages",
 	   "liste_videos": [
@@ -1627,7 +1627,7 @@ var G_projs_json = [
 	   "description": "Pas de description disponible.",
 	   "views": 49,
 	   "promo": 2013,
-	   "image": "../../Contenu/Affiches/affiches/courtine.jpg",
+	   "image": "../../Contenu/affiches/courtine.jpg",
 	   "date": "2015-09-27",
 	   "titre": "Incorpo X2015 - La Courtine",
 	   "liste_videos": [
