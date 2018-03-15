@@ -292,6 +292,22 @@
 
         </div>
 
+        <div class="container-fluid" style="background-color:rgba(230, 126, 34,1.0);"  id="section_bonus">
+            
+            <div class="container">
+                    <div class="col-12" style="height:50px;"></div>
+                    <h1 class="display-3 text-white">Bonus</h1>
+                    <div class="dropdown-divider"></div>
+                    <div id="inter">
+                            <div class="list d-flex col-12 flex-wrap" id="list_bonus">
+    
+                               
+                            </div>
+                    </div>
+            </div>  
+
+    </div>
+
 
         <div class="container-fluid" style="background-color:#343A40;"  id="footer">
                 
@@ -430,6 +446,12 @@
             else{
                 document.getElementById('list_inter').innerHTML+=compiled_video(G_projs_json.find(e=>e.id==G_liste_inter[v].id))                
             }
+        }
+
+        var bonus = G_videos_json.filter(v=>v.category==35)
+        for(k in bonus){
+            document.getElementById('list_bonus').innerHTML+=compiled_video(bonus[k])
+            
         }
     </script>
 

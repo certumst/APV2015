@@ -254,7 +254,7 @@ function add_video_res(link, cat, idd, proj=0, promo=2015){
     jso = {};
     jso['category'] = cat
     jso['description'] = 'Pas de description disponible.'
-    jso['screenshot'] = 'screenshot.png'
+    jso['screenshot'] = '../../Contenu/screenshot.png'
     jso['subtitles'] = 'empty.vtt'
     jso['duree'] = 0,
     jso['hd'] = '../../Contenu/'+link.trim()
