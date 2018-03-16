@@ -830,7 +830,7 @@ var G_projs_json = [
 	   "views": 245,
 	   "promo": 2015,
 	   "image": "../../Contenu/Evenements/Spectacles_concerts/X_Broadway/2017-04_Aladdin/videos/affiche.png",
-	   "date": "2018-02-08",
+	   "date": "2017-04-08",
 	   "titre": "Proj Broadway 2015 : Aladdin",
 	   "liste_videos": [
 		  10585,

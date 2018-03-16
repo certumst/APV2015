@@ -221,9 +221,9 @@ var events_t = [
 	},
 	{
 	   "start_date": {
-		  "month": "02",
-		  "day": "08",
-		  "year": "2018"
+		  "month": "26",
+		  "day": "04",
+		  "year": "2017"
 	   },
 	   "text": {
 		  "headline": "Proj Broadway 2015 : Aladdin"
