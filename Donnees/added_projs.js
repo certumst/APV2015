@@ -144,16 +144,16 @@ var added_projs = [
         ]
      },
      {
-        "titre": "Soirée X-Tra - Conccert Chorale - Octobre 2016",
+        "titre": "Soirée X-Tra - Concert Chorale - Octobre 2016",
         "image": "../../Contenu/Affiches/default_proj.jpg",
         "type": "proj",
         "category": 25,
-        "id": 151555,
+        "id": 1515559,
         "promo": 2014,
         "date": "2016-10-14",
         "liste_videos": [
-           151555,
-           151556
+           1515557,
+           1515577
         ]
      },
      {

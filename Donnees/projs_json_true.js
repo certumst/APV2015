@@ -1409,7 +1409,7 @@ var G_projs_json = [
 	   "promo": 2014,
 	   "image": "../../Contenu/default_proj.jpg",
 	   "date": "2017-03-24",
-	   "titre": "Amphi de départ des 2014",
+	   "titre": "Amphi de départ des 2014 - ADD 2014",
 	   "liste_videos": [
 		  10158,
 		  10159,
