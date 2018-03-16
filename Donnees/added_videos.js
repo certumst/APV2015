@@ -1081,6 +1081,36 @@ var added_videos =
        "subtitles": "../../Contenu/empty.vtt"
     },
     {
+        "category": 15151,
+        "description": "Pas de description disponible.",
+        "screenshot": "../../Contenu/screenshot.png",
+        "duree": 0,
+        "hd": "../../Contenu/Divers/Vdj/Armand/The_dankest_marches_ever.mp4",
+        "auteurs": "",
+        "id": 151167,
+        "type": "video",
+        "acteurs": "",
+        "promo": 2015,
+        "titre": "The dankest marches ever",
+        "proj": 151151,
+        "subtitles": "../../Contenu/empty.vtt"
+     },
+     {
+        "category": 15151,
+        "description": "Pas de description disponible.",
+        "screenshot": "../../Contenu/screenshot.png",
+        "duree": 0,
+        "hd": "../../Contenu/Divers/Vdj/Armand/Etienne_GNK.mp4",
+        "auteurs": "",
+        "id": 151168,
+        "type": "video",
+        "acteurs": "",
+        "promo": 2015,
+        "titre": "Etienne GNK.mp4",
+        "proj": 151151,
+        "subtitles": "../../Contenu/empty.vtt"
+     },
+    {
        "category": 11,
        "description": "Pas de description disponible.",
        "screenshot": "../../Contenu/screenshot.png",
