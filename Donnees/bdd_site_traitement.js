@@ -71,7 +71,7 @@ function add_proj(proj_id, true_date=0){
     p.fields['liste_videos'] = liste_videos
     p.fields['id'] = p.pk
     p.fields['type'] = "proj"
-    p.fields['image'] = '../../Contenu/Affiches/'+p.fields['image'].split('/videos/')[1]
+    p.fields['image'] = '../../Contenu/'+p.fields['image'].split('/videos/')[1]
     if(true_date!=0){p.fields['date']=true_date.date}
     projs.push(p.fields)
     add_videos(liste_videos, proj_id, p.fields['promo'], p.fields['titre'])

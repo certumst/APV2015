@@ -10,7 +10,7 @@ var G_liste_evenements = [
     {
         titre: 'WEI',
         collapse_id: 'collapse_WEI',
-        evnt_image : "../img/logo 2015.jpg",
+        evnt_image : "../../Contenu/affiches/wei.jpeg",
         content:[
             {
                 annee:"2015",
@@ -39,7 +39,7 @@ var G_liste_evenements = [
     {
         titre: 'Incorpo - Courtine',
         collapse_id: 'collapse_INC',
-        evnt_image : "../img/logo 2015.jpg",
+        evnt_image : "../../Contenu/affiches/courtine.jpg",
         content:[
             {
                 annee:"2015",
@@ -104,7 +104,7 @@ var G_liste_evenements = [
     {
         titre: 'Amphi Binets',
         collapse_id: 'collapse_binets',
-        evnt_image : "../img/logo 2015.jpg",
+        evnt_image : "../../Contenu/affiches/binets.png",
         content:[
             {
                 annee:"2015",
@@ -133,7 +133,7 @@ var G_liste_evenements = [
     {
         titre: "Raid de l'X",
         collapse_id: 'collapse_raid',
-        evnt_image : "../img/logo 2015.jpg",
+        evnt_image : "../../Contenu/affiches/raid.jpg",
         content:[
             {
                 annee:"2016",
@@ -162,7 +162,7 @@ var G_liste_evenements = [
     {
         titre: "Coupe l'X",
         collapse_id: 'collapse_coupe',
-        evnt_image : "../img/logo 2015.jpg",
+        evnt_image : "../../Contenu/affiches/coupe.png",
         content:[
             {
                 annee:"2016",
@@ -191,7 +191,7 @@ var G_liste_evenements = [
     {
         titre: "Campagne Kès",
         collapse_id: 'collapse_kes',
-        evnt_image : "../img/logo 2015.jpg",
+        evnt_image : "../../Contenu/affiches/kes.png",
         content:[
             {
                 annee:"2015",

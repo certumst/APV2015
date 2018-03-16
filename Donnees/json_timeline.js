@@ -67,8 +67,8 @@ var events_t = [
 	},
 	{
 	   "start_date": {
-		  "month": "10",
-		  "day": "27",
+		  "month": "04",
+		  "day": "06",
 		  "year": "2017"
 	   },
 	   "text": {
@@ -266,7 +266,7 @@ var events_t = [
 	{
 	   "start_date": {
 		  "month": "09",
-		  "day": "05",
+		  "day": "07",
 		  "year": "2016"
 	   },
 	   "text": {
@@ -288,7 +288,7 @@ var events_t = [
 	{
 	   "start_date": {
 		  "month": "09",
-		  "day": "07",
+		  "day": "05",
 		  "year": "2016"
 	   },
 	   "text": {
@@ -361,17 +361,6 @@ var events_t = [
 		  "headline": "Amphi de départ des 2014"
 	   },
 	   "unique_id": "410"
-	},
-	{
-	   "start_date": {
-		  "month": "09",
-		  "day": "20",
-		  "year": "2015"
-	   },
-	   "text": {
-		  "headline": "Incorpo X2015 - WED"
-	   },
-	   "unique_id": "248"
 	},
 	{
 	   "start_date": {

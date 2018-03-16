@@ -1,3 +1,4 @@
+
 var G_projs_json = [
 	{
 	   "category": 11,
@@ -246,7 +247,7 @@ var G_projs_json = [
 	   "views": 150,
 	   "promo": 2015,
 	   "image": "../../Contenu/affiches/JTX 2015/logo 2015.jpg",
-	   "date": "2017-10-27",
+	   "date": "2017-04-06",
 	   "titre": "Semaine internationale - Houlgate 2017",
 	   "liste_videos": [
 		  3670,
@@ -1145,7 +1146,7 @@ var G_projs_json = [
 	   "views": 77,
 	   "promo": 2014,
 	   "image": "../../Contenu/default_proj.jpg",
-	   "date": "2016-09-05",
+	   "date": "2016-09-07",
 	   "titre": "Incorpo X2016 - Chasse au trésor",
 	   "liste_videos": [
 		  7050,
@@ -1221,7 +1222,7 @@ var G_projs_json = [
 	   "views": 30,
 	   "promo": 2014,
 	   "image": "../../Contenu/default_proj.jpg",
-	   "date": "2016-09-07",
+	   "date": "2016-09-05",
 	   "titre": "Incorpo X2016 - NOVA",
 	   "liste_videos": [
 		  7101,
@@ -1440,42 +1441,6 @@ var G_projs_json = [
 		  10184
 	   ],
 	   "id": 410,
-	   "type": "proj"
-	},
-	{
-	   "category": 15,
-	   "description": "Pas de description disponible.",
-	   "views": 15,
-	   "promo": 2013,
-	   "image": "../../Contenu/default_proj.jpg",
-	   "date": "2015-09-20",
-	   "titre": "Incorpo X2015 - WED",
-	   "liste_videos": [
-		  6659,
-		  6660,
-		  6661,
-		  6662,
-		  6663,
-		  6664,
-		  6665,
-		  6666,
-		  6667,
-		  6668,
-		  6669,
-		  6670,
-		  6671,
-		  6672,
-		  6673,
-		  6674,
-		  6675,
-		  6676,
-		  6677,
-		  6678,
-		  6679,
-		  6680,
-		  6681
-	   ],
-	   "id": 248,
 	   "type": "proj"
 	},
 	{
