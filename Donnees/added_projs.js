@@ -74,7 +74,7 @@ var added_projs = [
         "titre": "VDJ Originales by Armand Lacombe",
         "image": "../../Contenu/Affiches/default_proj.jpg",
         "type": "proj",
-        "category": 15151,
+        "category": 35,
         "id": 151151,
         "promo": 2015,
         "date": "2017-07-30",

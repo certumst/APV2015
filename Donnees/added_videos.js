@@ -386,7 +386,7 @@ var added_videos =
        "type": "video",
        "acteurs": "",
        "promo": 2015,
-       "titre": "retro oktoberfest2",
+       "titre": "Retro Oktoberfest",
        "proj": 157150,
        "subtitles": "../../Contenu/empty.vtt"
     },
@@ -1466,7 +1466,7 @@ var added_videos =
        "type": "video",
        "acteurs": "",
        "promo": 2015,
-       "titre": "retro oktoberfest2",
+       "titre": "Retro Oktoberfest",
        "proj": 0,
        "subtitles": "../../Contenu/empty.vtt"
     },
@@ -1496,7 +1496,7 @@ var added_videos =
        "type": "video",
        "acteurs": "",
        "promo": 2015,
-       "titre": "AftermoviePG2016",
+       "titre": "Aftermovie Point Gamma 2016",
        "proj": 0,
        "subtitles": "../../Contenu/empty.vtt"
     },
@@ -1511,7 +1511,7 @@ var added_videos =
        "type": "video",
        "acteurs": "",
        "promo": 2015,
-       "titre": "AftermovieFinal2",
+       "titre": "Aftermovie Point Gamma 2017",
        "proj": 0,
        "subtitles": "../../Contenu/empty.vtt"
     },

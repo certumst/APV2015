@@ -273,7 +273,6 @@ var G_liste_evenements = [
 ]
 
 var G_liste_spectacles = [
-
     {
         type:"proj",
         id:151555,

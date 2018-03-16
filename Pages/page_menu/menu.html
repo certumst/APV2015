@@ -365,7 +365,7 @@
         <div class="col-3 p-1">
     <div class="card ">
         <!-- The innerHTML of children with class="name" becomes this items "name" value -->
-        <img class="card-img-top" src="<%= evnt_image %>" alt="Card image cap">
+        <img class="card-img-top" src="<%= evnt_image %>" alt="Card image cap" onclick="toggle_self(this.parentElement.children[1].children[1])">
         <div class="card-body p-2">
             <h5 class="titre card_list card-title m-0" data-toggle="collapse" data-target="<%= "#" + collapse_id %>" aria-expanded="false" role="button"><%= titre %></h5>
             <div id="<%= collapse_id %>" class="collapse collapse_id" style="padding-top:10px;">
@@ -411,6 +411,9 @@
             }
         })
 
+        function toggle_self(e){
+            $('#'+e.id).collapse('toggle')
+        }
         
         var template_video = `
         <div class = "col-3 p-1">
@@ -435,7 +438,9 @@
         var compiled_video = _.template(template_video);          
         for(v=0;v<G_liste_spectacles.length;v++){
             if(G_liste_spectacles[v].type=="video"){
-                document.getElementById('list_specs').innerHTML+=compiled_video(G_videos_json.find(e=>e.id==G_liste_spectacles[v].id))
+                if(G_videos_json.find(e=>e.id==G_liste_spectacles[v].id)){
+                    document.getElementById('list_specs').innerHTML+=compiled_video(G_videos_json.find(e=>e.id==G_liste_spectacles[v].id))                    
+                }
             }
             else{
                 document.getElementById('list_specs').innerHTML+=compiled_video(G_projs_json.find(e=>e.id==G_liste_spectacles[v].id))                
@@ -445,17 +450,22 @@
         //Remplissage des interviews : 
         for(v=0;v<G_liste_inter.length;v++){
             if(G_liste_inter[v].type=="video"){
+                if(G_videos_json.find(e=>e.id==G_liste_inter[v].id)){
                 document.getElementById('list_inter').innerHTML+=compiled_video(G_videos_json.find(e=>e.id==G_liste_inter[v].id))
+                }
             }
             else{
                 document.getElementById('list_inter').innerHTML+=compiled_video(G_projs_json.find(e=>e.id==G_liste_inter[v].id))                
             }
         }
 
+        var bonus_proj =  G_projs_json.filter(v=>v.category==35)
+        for(k in bonus_proj){
+            document.getElementById('list_bonus').innerHTML+=compiled_video(bonus_proj[k])
+        }
         var bonus = G_videos_json.filter(v=>v.category==35)
         for(k in bonus){
             document.getElementById('list_bonus').innerHTML+=compiled_video(bonus[k])
-            
         }
     </script>
 
