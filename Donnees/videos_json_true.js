@@ -3675,27 +3675,6 @@ var G_videos_json = [
 	   "type": "video"
 	},
 	{
-	   "category": 13,
-	   "md": "/videos/Evenements/Semaine_internationale/Houlgate_2017/MD/Rétro jeudi_1.mp4",
-	   "description": "Pas de description disponible.",
-	   "screenshot": "../../Contenu/Evenements/Semaine_internationale/Houlgate_2017/snaps/Rétro jeudi_1.mp4.png",
-	   "views": 4,
-	   "promo": 2015,
-	   "duree": 82,
-	   "subtitles": "../../Contenu/empty.vtt",
-	   "date": "2017-10-27",
-	   "titre": "Rétro jeudi 1",
-	   "hd": "../../Contenu/Evenements/Semaine_internationale/Houlgate_2017/HD/Rétro jeudi_1.mp4",
-	   "sd": "/videos/Evenements/Semaine_internationale/Houlgate_2017/LQ/Rétro jeudi_1.mp4",
-	   "proj": 111,
-	   "id": 3682,
-	   "auteurs": "",
-	   "tags": "Semaine internationale",
-	   "acteurs": "",
-	   "proj_name": "Semaine internationale - Houlgate 2017",
-	   "type": "video"
-	},
-	{
 	   "category": 14,
 	   "md": "/videos/Evenements/Campagne_Kes/Campagne_Kes_des_2k15/1-Amphi_Kes/MD/000a_intro_final_plus_lumineux.mp4",
 	   "description": "Pas de description disponible.",

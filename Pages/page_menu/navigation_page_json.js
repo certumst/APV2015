@@ -53,10 +53,6 @@ var G_liste_evenements = [
                         proj_id:253,
                     },
                     {
-                        titre:"WED 2015",
-                        proj_id:248,
-                    },
-                    {
                         titre:"La Courtine 2015",
                         proj_id:254,
                     },
