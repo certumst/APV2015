@@ -181,8 +181,20 @@ function add_class_to_proj(){
     }
 }
 
-window.addEventListener('keypress', function(){
-    document.getElementById('recherche_input').focus()
+window.addEventListener('keypress', function(e){
+    if(e.which == 32 && document.activeElement.id!="recherche_input"){
+        if(document.getElementById('video')){
+            if(document.getElementById('video').paused){
+                document.getElementById('video').play()
+            }
+            else{
+                document.getElementById('video').pause()
+            }
+        }
+    }
+    else{
+        document.getElementById('recherche_input').focus()
+    }
 });
 
 var previous_state;
