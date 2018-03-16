@@ -347,9 +347,9 @@
 
         //Initialisation de la liste des projs :
         
-        var item_string = '<div class="col-3" style="margin-bottom:10px;"> <div class="card card_list link_proj"><img class="card-img-top proj_image" src="" alt="Card image cap" ><a class="id invisible" href=""></a><div class="card-body p-2"><h5 class="titre card-title m-0"></h5><h6 class="titre_op"></h6><div class="d-flex w-100 justify-content-between align-items-center"><span class="mb-1 jtx"></span><small class="duree"></small></div></div></div></div>';
+        var item_string = '<div class="col-3" style="margin-bottom:10px;"> <div class="card card_list link_proj"><img class="card-img-top image" src="" alt="Card image cap" ><a class="id invisible" href=""></a><div class="card-body p-2"><h5 class="titre card-title m-0"></h5><h6 class="titre_op"></h6><div class="d-flex w-100 justify-content-between align-items-center"><span class="mb-1 jtx"></span><small class="duree"></small></div></div></div></div>';
         var projs_JTX_options = {
-            valueNames: [ 'titre', 'titre_op',  'jtx', 'duree', { name: 'proj_image', attr: 'src' },{ name: 'id', attr: 'href' }],
+            valueNames: [ 'titre', 'titre_op',  'jtx', 'duree', { name: 'image', attr: 'src' },{ name: 'id', attr: 'href' }],
             item : item_string,
         }
         var LIST_projs_JTX = new List('projs_JTX',projs_JTX_options, G_projs_json.filter(proj => proj.category==8));
