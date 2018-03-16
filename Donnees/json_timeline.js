@@ -221,8 +221,8 @@ var events_t = [
 	},
 	{
 	   "start_date": {
-		  "month": "26",
-		  "day": "04",
+		  "month": "04",
+		  "day": "26",
 		  "year": "2017"
 	   },
 	   "text": {
@@ -394,5 +394,27 @@ var events_t = [
 		  "headline": "Incorpo X2015 - La Courtine"
 	   },
 	   "unique_id": "254"
-	}
+	},
+	{
+		"start_date": {
+		   "month": "11",
+		   "day": "15",
+		   "year": "2016"
+		},
+		"text": {
+		   "headline": "Prépass' JTX 2015"
+		},
+		"unique_id": "157150"
+	 },
+	 {
+		"start_date": {
+		   "month": "10",
+		   "day": "21",
+		   "year": "2017"
+		},
+		"text": {
+		   "headline": "Sywoc"
+		},
+		"unique_id": "151552"
+	 },
  ]
