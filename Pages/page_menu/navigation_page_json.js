@@ -286,6 +286,10 @@ var G_liste_spectacles = [
         id:435,
     },
     {
+        type:"proj",
+        id:314,
+    },
+    {
         "type": "video",
         "id": 125567
      },
