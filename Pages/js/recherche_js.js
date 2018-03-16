@@ -191,6 +191,7 @@ window.addEventListener('keypress', function(e){
                 document.getElementById('video').pause()
             }
         }
+        e.preventDefault()
     }
     else{
         document.getElementById('recherche_input').focus()

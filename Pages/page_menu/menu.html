@@ -352,7 +352,8 @@
             valueNames: [ 'titre', 'titre_op',  'jtx', 'duree', { name: 'image', attr: 'src' },{ name: 'id', attr: 'href' }],
             item : item_string,
         }
-        var LIST_projs_JTX = new List('projs_JTX',projs_JTX_options, G_projs_json.filter(proj => proj.category==8));
+        var LIST_projs_JTX = new List('projs_JTX',projs_JTX_options, G_projs_json.filter(proj => proj.category==8).sort(function (a, b) {
+  return b.date.localeCompare(a.date);}));
         //Pour que les clicks sur les cards nous emmènent au bout de la nuit :
         $(".link_proj").click(function() {
             window.location = '../page_contenu/contenu.html#proj='+$(this).find("a").attr("href"); 
