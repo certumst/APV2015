@@ -391,6 +391,21 @@ var G_liste_spectacles = [
 var G_liste_inter = [
     {
         type:"video",
-        id:125560,
-    }    
+        id:125492,
+    },
+    {
+        type:"video",
+        id:125568,
+    },
+    {
+        type:"video",
+        id:125562,
+    },
+    {
+        type:"video",
+        id:125509,
+    },    {
+        type:"video",
+        id:125518,
+    }  
 ]

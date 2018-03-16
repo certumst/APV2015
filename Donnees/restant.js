@@ -214,6 +214,13 @@ var to_add = [
    
 ]
 
+var interviews = ["interviews/INTERVIEW TOURNEUR.mp4","interviews/INTERVIEW DELTOUR.mp4","interviews/INTERVIEW BIOT.mp4","interviews/INTERVIEW HOLINER.mp4","interviews/INTERVIEW BOUCHET.mp4","interviews/file.txt"]
+var Qpuc = [
+    "Divers/QPUC/QPUC - 0 Les premières images inédites de l'émission spéciale.mp4",
+    "Divers/QPUC/QPUC - 1 Neuf points gagnants - 24-04-2017.mp4",                   
+    "Divers/QPUC/QPUC - 2 Quatre à la suite - 24-04-2017.mp4",                      
+    "Divers/QPUC/QPUC - 3 Face à face- 24-04-2017.mp4",
+]
 a_vid = [];
 a_proj = [];
 

@@ -155,5 +155,20 @@ var added_projs = [
            151555,
            151556
         ]
-     }
+     },
+     {
+        "titre": "Question pour un champion",
+        "image": "../../Contenu/Affiches/default_proj.jpg",
+        "type": "proj",
+        "category": 35,
+        "id": 1511555681,
+        "promo": 2015,
+        "date": "2017-07-30",
+        "liste_videos": [
+            125499,
+            1255627,
+            125498,
+            125559
+        ]
+     },
 ]
