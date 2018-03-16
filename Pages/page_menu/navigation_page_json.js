@@ -282,6 +282,10 @@ var G_liste_spectacles = [
         id:185153,
     },
     {
+        type:"proj",
+        id:435,
+    },
+    {
         "type": "video",
         "id": 125567
      },
@@ -319,10 +323,6 @@ var G_liste_spectacles = [
      },
      {
         "type": "video",
-        "id": 125512
-     },
-     {
-        "type": "video",
         "id": 125520
      },
      {
@@ -340,15 +340,7 @@ var G_liste_spectacles = [
 
      {
         "type": "video",
-        "id": 125492
-     },
-     {
-        "type": "video",
         "id": 125483
-     },
-     {
-        "type": "video",
-        "id": 125561
      },
      {
         "type": "video",
@@ -356,15 +348,11 @@ var G_liste_spectacles = [
      },
      {
         "type": "video",
-        "id": 125484
-     },
-     {
-        "type": "video",
         "id": 125531
      },
      {
         "type": "video",
-        "id": 12556789854845632367239
+        "id": 12556789854845
      },
      {
         "type": "video",
