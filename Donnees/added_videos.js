@@ -1757,7 +1757,7 @@ var added_videos =
         "type": "video",
         "acteurs": "",
         "promo": 2015,
-        "titre": "061 Pas si vite le Semite.MOV ",
+        "titre": "Pas si vite le Semite",
         "proj": 0
      },
      {
@@ -1766,13 +1766,13 @@ var added_videos =
         "screenshot": "../../Contenu/screenshot.png",
         "subtitles": "empty.vtt",
         "duree": 0,
-        "hd": "../../Contenu/Divers/Rushs/De tous les binets, cest le jtx que je préfère.MTS",
+        "hd": "../../Contenu/Divers/Rushs/De tous les binets, cest le jtx que je préfère.mp4",
         "auteurs": "",
         "id": 2535685550,
         "type": "video",
         "acteurs": "",
         "promo": 2015,
-        "titre": "De tous les binets, cest le jtx que je préfère.MTS",
+        "titre": "De tous les binets, cest le jtx que je préfère",
         "proj": 0
      },
      {
