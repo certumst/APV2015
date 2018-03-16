@@ -2194,5 +2194,20 @@ var added_videos =
         "promo": 2015,
         "titre": "Gag Khômiss PAD des 2016",
         "proj": 0
+     },
+     {
+        "category": 25,
+        "description": "Pas de description disponible.",
+        "screenshot": "../../Contenu/screenshot.png",
+        "subtitles": "empty.vtt",
+        "duree": 0,
+        "hd": "../../Contenu/Divers/Rétros/retro_mili.mp4",
+        "auteurs": "",
+        "id": 13255592,
+        "type": "video",
+        "acteurs": "",
+        "promo": 2015,
+        "titre": "Rétro des Cérémonies Militaires",
+        "proj": 0
      }
  ]
