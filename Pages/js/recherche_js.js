@@ -194,7 +194,21 @@ window.addEventListener('keypress', function(e){
         e.preventDefault()
     }
     else{
-        document.getElementById('recherche_input').focus()
+        if(e.which==44){
+            videoElement = document.getElementById('video')
+            
+                if (videoElement.mozRequestFullScreen) {
+                    videoElement.mozRequestFullScreen();
+                } else {
+                    console.log('plein ecran')
+                    videoElement.webkitRequestFullscreen()
+                }
+            
+        }
+        else{
+            document.getElementById('recherche_input').focus()
+        
+        }
     }
 });
 

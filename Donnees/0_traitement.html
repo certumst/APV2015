@@ -23,7 +23,7 @@
         <div class="form-group">
                 <textarea class="form-control" id="projs_ids" rows="5">
                     {"value":[
-                        317, 404, 405, 407, 409, 437, 
+                        317, 404, 405, 407, 409, 437, 453, 261,
                         111, 186, 187, 188, 204, 262, 263, 280, 318, 322, 334, 335, 399, 428, 435, 
                         203, 255, 256, 257, 258, 259, 264, 281, 314, 336, 337, 410, 
                         252, 253, 254
@@ -143,6 +143,15 @@
         document.getElementById('text_videos').value = "var G_videos_json = " + JSON.stringify(videos, null, 3)
         document.getElementById('text_timeline').value = "var events_t = "+ JSON.stringify(get_json_for_timeline(), null, 3)
 
+        var to_delete = [7249, 7193, 7194, 7195, 7196, 7197, 7198, 7199, 7200, 7201, 7202, 7203, 7204, 7205, 7206, 7207, 7208, 7209, 7210, 7211, 7212, 7213, 7214, 7215, 7216, 7217, 7218, 7219, 7220, 7221, 7222, 7223, 7224, 7225, 7226, 7227, 7228, 7229, 7230, 7231, 7232, 7233, 7234, 7235, 7236]
+    
+        without_bad=[]
+        for(k in videos){
+            if(!to_delete.includes(videos[k].id)){
+                without_bad.push(videos[k])
+            }
+        }
+        console.log(JSON.stringify(without_bad, null,3))
         var options = {
             valueNames:[
                 'titre',
@@ -161,7 +170,6 @@
         copyText.select();
         document.execCommand("Copy");
     }
-
 
 
     

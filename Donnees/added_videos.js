@@ -1376,7 +1376,7 @@ var added_videos =
        "type": "video",
        "acteurs": "",
        "promo": 2015,
-       "titre": "2016-06-09 Concert OPS - 4ème Symphonie Brahms",
+       "titre": "Concert OPS - 4ème Symphonie Brahms",
        "proj": 0,
        "subtitles": "../../Contenu/empty.vtt"
     },
@@ -1391,7 +1391,7 @@ var added_videos =
        "type": "video",
        "acteurs": "",
        "promo": 2015,
-       "titre": "Concert OPS 06-12-2016",
+       "titre": "Concert OPS - Peer Gynt",
        "proj": 0,
        "subtitles": "../../Contenu/empty.vtt"
     },
@@ -1406,7 +1406,7 @@ var added_videos =
        "type": "video",
        "acteurs": "",
        "promo": 2015,
-       "titre": "2017-03-16 Concert OPS - Dvorak",
+       "titre": "Concert OPS - Dvorak",
        "proj": 0,
        "subtitles": "../../Contenu/empty.vtt"
     },
@@ -1421,7 +1421,7 @@ var added_videos =
        "type": "video",
        "acteurs": "",
        "promo": 2015,
-       "titre": "2017-05-18 Concert OPS - Beethoven",
+       "titre": "Concert OPS - Beethoven",
        "proj": 0,
        "subtitles": "../../Contenu/empty.vtt"
     },
@@ -1617,7 +1617,7 @@ var added_videos =
        "type": "video",
        "acteurs": "",
        "promo": 2015,
-       "titre": "Moulierac - TEDx",
+       "titre": "TEDx Talk de Sylvain Moulierac",
        "proj": 0,
        "subtitles": "../../Contenu/empty.vtt"
     },
@@ -2042,7 +2042,7 @@ var added_videos =
         "type": "video",
         "acteurs": "",
         "promo": 2015,
-        "titre": "Interview du Colonel Tourneur",
+        "titre": "Interview du COL Tourneur",
         "proj": 0
      },
      {
@@ -2102,7 +2102,7 @@ var added_videos =
         "type": "video",
         "acteurs": "",
         "promo": 2015,
-        "titre": "Interview du Général Bouchet",
+        "titre": "Interview du GAL Bouchet",
         "proj": 0
      },
      {
@@ -2208,6 +2208,21 @@ var added_videos =
         "acteurs": "",
         "promo": 2015,
         "titre": "Rétro des Cérémonies Militaires",
+        "proj": 0
+     },
+     {
+        "category": 35,
+        "description": "Pas de description disponible.",
+        "screenshot": "../../Contenu/screenshot.png",
+        "subtitles": "empty.vtt",
+        "duree": 0,
+        "hd": "../../Contenu/Divers/manequin_bad.mp4",
+        "auteurs": "Martin Baillon",
+        "id": 99999999,
+        "type": "video",
+        "acteurs": "Martin d'amour",
+        "promo": 2015,
+        "titre": "Mannequin Challenge du Bad",
         "proj": 0
      }
  ]

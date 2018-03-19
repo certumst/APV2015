@@ -43,7 +43,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                     <li class="nav-item active">
-                                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                      <a class="nav-link" href="../../Pages/page_menu/menu.html">Home <span class="sr-only">(current)</span></a>
                                     </li>
                             </ul>   
                     </div>
@@ -161,6 +161,7 @@
                         <% } %>
                          Your browser does not support the video tag.
                     </video>
+                    <small class='m-2 font-italic'>Pour remettre la vidéo en plein écran, appuyez sur ',' ou sur la touche à côté du N.</small>
                 </div>
                 <div class="col-6 p-0">
             
@@ -241,6 +242,7 @@
     window.onhashchange = change_video;
     var proj_id, video_id
 
+
     function change_video(new_id=0){
         console.log("changinf")
         console.log(new_id)
@@ -311,12 +313,23 @@
         }
         
         $('body').scrollTo('#timeline-embed',500)
+
+        
         document.getElementById('video').play();
         $('[role="tooltip"]').tooltip('dispose')
 
         if(proj_id && proj_id!="0"){    
             document.getElementById('video').addEventListener('ended',
             function (e) {
+               
+                //On check si l'écran est en mode plein écran
+                if(!document.mozFullScreen && !document.webkitIsFullScreen){
+                    sessionStorage.setItem('APVFullscreen', 'non');
+                }
+                else{
+                    sessionStorage.setItem('APVFullscreen', 'oui');
+                }
+
                 console.log('going to next...')
                 index = proj_en_cours.liste_videos.findIndex(k=>k==video_id)
                 if(index<proj_en_cours.liste_videos.length-1){
@@ -326,8 +339,10 @@
             });
         }
         
+        
     }
 
+  
     
     </script>   
 

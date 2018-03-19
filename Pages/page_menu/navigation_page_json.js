@@ -86,7 +86,10 @@ var G_liste_evenements = [
             {
                 annee:"2017",
                 projs:[
-                    
+                    {
+                        titre:"Proj Stages 2017",
+                        proj_id:261,
+                    },
                     {
                         titre:"La Courtine 2017",
                         proj_id:262,
@@ -269,6 +272,10 @@ var G_liste_evenements = [
 ]
 
 var G_liste_spectacles = [
+    {
+        type:"proj",
+        id:453,
+    },
     {
         type:"proj",
         id:1515559,
