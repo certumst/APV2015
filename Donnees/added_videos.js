@@ -2224,5 +2224,20 @@ var added_videos =
         "promo": 2015,
         "titre": "Mannequin Challenge du Bad",
         "proj": 0
+     },
+     {
+        "category": 35,
+        "description": "Pas de description disponible.",
+        "screenshot": "../../Contenu/screenshot.png",
+        "subtitles": "empty.vtt",
+        "duree": 0,
+        "hd": "../../Contenu/Divers/revelation_add.mp4",
+        "auteurs": "",
+        "id": 999999997,
+        "type": "video",
+        "acteurs": "",
+        "promo": 2015,
+        "titre": "Révélation du thème de l'ADD2015",
+        "proj": 0
      }
  ]
